@@ -68,17 +68,17 @@
         }
 
         h4 {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 300;
         }
 
         body {
-            font-size: 14px;
-            font-weight: 450;
+            font-size: 12px;
+            font-weight: 370;
         }
 
         p {
-            font-size: 12px;
+            font-size: 10px;
             font-weight: 300;
         }
 
@@ -109,6 +109,19 @@
             height: auto;
         }
 
+        .rotating-image {
+            size: 30%;
+            position: absolute; /* Imposta la posizione assoluta per posizionare l'immagine in modo specifico */
+            top: 50px; /* Modifica queste coordinate per posizionare l'immagine dove desideri */
+            left: 90px; /* Modifica queste coordinate per posizionare l'immagine dove desideri */
+            animation: spin 5s linear infinite; /* Crea un'animazione "spin" */
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -117,22 +130,6 @@
             .colonna-sinistra, .colonna-destra {
                 width: 100%;
                 position: static;
-            }
-
-            .voci a {
-                font-size: 18px;
-            }
-
-            h1 {
-                font-size: 20px;
-            }
-
-            h4 {
-                font-size: 14px;
-            }
-
-            p {
-                font-size: 10px;
             }
 
             .colonna-destra li {
@@ -158,6 +155,7 @@
             <div class="titolo">
                 <h1>Pierfrancesco Perrone</h1>
                 <p>Composer / Sound Artist</p>
+                <img class="rotating-image" src="rotellina.png" alt="Immagine Rotante">
                 <p>studio sul suono che mi ha attraversato</p>
             </div>
             <div class="voci">
