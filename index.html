@@ -1,91 +1,42 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pierfrancesco Perrone - Sound Artist</title>
+    <title>Sito Web Semplice</title>
     <style>
         body {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100vh;
         }
 
-        .container1 {
-            height: 100%;
+        .container {
+            display: flex;
+            overflow-x: hidden;
+        }
+
+        .colonna-sinistra {
+            background-color: white;
+            color: black;
             width: 25%;
-            margin-top:15px;
-            margin-left: 15px;
-            margin-bottom: 15px;
-            margin-right: 10px;
-            box-sizing: border-box;
-            overflow: auto;
-            border: 1px solid #ccc;
-            margin: 0px;
+            padding: 0%;
+            font-size: 24px;
+            margin-top: 15px;
+            margin-left: 20px;
             position: fixed;
             top: 0;
-            padding: 0px;
             overflow-y: hidden;
         }
-        .container2 {
-            height: 100%;
+
+        .colonna-destra {
             width: 75%;
-            margin-top:15px;
-            height: auto;
-            overflow: auto;
-            border: 1px solid #ccc;
-            margin: 0px;
-            padding: 0px;
-            margin-right: 15px;
-            margin-bottom: 15px;
+            padding: 0%;
+            margin-left: 40%;
+            margin-right: 20px;
             position: relative;
-            overflow-y: auto;
-        }
-            
-
-        .footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            overflow-y: scroll;
         }
 
-         /* Stile dei bottoni */
-         .footer-button {
-            position: absolute;
-            top: 5px;
-            right: 10px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-        }
-
-        .footer-button i {
-            font-size: 20px;
-        }
-
-        /* Stile dei link nei bottoni */
-        .footer-button a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        /* Aggiungi spazio tra i bottoni */
-        .footer-button + .footer-button {
-            margin-left: 10px;
-        }
-        
-        
         .voci {
             margin-bottom: 20px;
         }
@@ -100,48 +51,45 @@
 
         .vociverdi a {
             text-decoration: none;
+            color: greenyellow;
+            font-weight: normal;
+            font-size: 24px;
+            display: block;
+        }
+        .voci2 a {
+            text-decoration: none;
             color: black;
             font-weight: normal;
             font-size: 24px;
             display: block;
-            margin-bottom: 5px;
         }
+
 
         .voci a:hover {
             text-decoration: underline;
-            color:aquamarine
         }
 
+        body{
+            font-size: 12px;
+            font-weight: 300;
+        }
         h1 {
             font-size: 24px;
-            font-weight: normal;
+            font-weight: 350;
         }
 
         h4 {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 300;
-        }
-
-        body {
-            font-size: 12px;
-            font-weight: 370;
         }
 
         p {
-            font-size: 10px;
+            font-size: 12px;
             font-weight: 300;
-        }
-
-        h1 + p {
-            margin:0px;
         }
 
         .colonna-sinistra h1 {
             font-size: 24px;
-        }
-
-        .colonna-sinistra .vociverdi a {
-            color: green;
         }
 
         .colonna-destra ul {
@@ -159,74 +107,110 @@
             height: auto;
         }
 
-        .rotating-image {
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            padding: 0%;
-            margin: 0%;
-            top: 80px;
-            left: 150px;
-            animation: spin 5s linear infinite;
+        button {
+            width: 20px;
+            height: 20px;
         }
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .colonna-sinistra, .colonna-destra {
+                width: 100%;
+                position: static;
+            }
+
+            .voci a {
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h4 {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+
+            .colonna-destra li {
+                margin-top: 20px;
+            }
+
+            .colonna-sinistra {
+                width: 100%;
+                margin-left: 0;
+                position: static;
+            }
+
+            .colonna-destra {
+                width: 100%;
+                margin-left: 0;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container1">
+    <div class="container">
         <div class="colonna-sinistra">
             <div class="titolo">
                 <h1>Pierfrancesco Perrone</h1>
-                <p>Composer / Sound Artist</p>
-                <img class="rotating-image" src="rotellina.png" alt="Immagine Rotante">
-                <p>studio sul suono che mi ha attraversato</p>
+                <h4>studio sul suono che mi ha attraversato</h4>
             </div>
-        </div>
             <div class="voci">
                 <a href="#portfolio">Portfolio</a>
-        </div>
+            </div>
             <div class="vociverdi">
                 <a href="#The-Red-Shoes">The Red Shoes</a>
                 <a href="#Il-Cielo-di-Carta">Il Cielo di Carta</a>
                 <a href="#The-Loop">The Loop</a>
                 <a href="#Mixes-for-Cash">Mixes For Cash</a>
-        </div>
-            <div class="voci">
+            </div>
+            <div class="voci">   
                 <a href="#Music">Music</a>
-                <h1></h1>
-                <h1></h1>
+            </div>
+            <div class="voci2">
                 <a href="#info">Pierfrancesco Perrone — Info</a>
+                <p></p>
                 <a href="#info">1. A sound is a perfect metaphor, an allegory in resonance. When heard, its tonal boundaries create an artistic proposition, and when considered without subjective interpretation, it becomes a direct analogy to the origins and limitations of our quest to comprehend the essence of all things.</a>
-                <h1></h1>
+                <p></p>
                 <a href="#read-more">Read More</a>
+            </div>
+            <div class="bottoni">
+
+                <button onclick="window.open('https://www.instagram.com/djiodosan', '_blank')">
+                    <img src="instagramred.png" alt="Instagram">
+                </button>
+                <button onclick="window.open('https://www.soundcloud.com/pierfrancescoperrone', '_blank')">
+                    <img src="soundcloudred.png" alt="Soundcloud">
+                </button>
+                <button onclick="window.open('https://www.twitter.com/pierfrancescoperrone', '_blank')">
+                    <img src="xred.png" alt="Twitter">
+                </button>
+
+            </div>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod odio vel orci congue, sit amet laoreet ex finibus. Integer eu nisi id turpis euismod consectetur. Vivamus sit amet tristique est, vel tincidunt libero. In hac habitasse platea dictumst.</p>
-        <div class="footer">Footer for Container 1
-        </div>
-        Footer for Container 1
-            <button class="footer-button"><a href="https://www.example.com" target="_blank"><i class="fa fa-link"></i></a></button>
-            <button class="footer-button"><a href="https://www.example2.com" target="_blank"><i class="fa fa-link"></i></a></button>
-    </div>
-    
-    <div class="container2">
         <div class="colonna-destra">
             <ul>
                 <li id="portfolio">
                 </li>
                 <li id="The-Red-Shoes">
                     <h1>The Red Shoes</h1>
-                    <body>Coreographer Philippe Kratz - Music Pierfrancesco Perrone</body>
-                    <p>2023 - 61' - Nuovo Balletto di Toscana - Dir. Cristina Bozzolini - Lights Giulia Pastore - Plot Sarah Stroebele - Costume Grace Lyell</p>
+                    <p2>2023 - 61' - Coreographer Philippe Kratz - Music Pierfrancesco Perrone</p2>
+                    <p>Nuovo Balletto di Toscana - Cristina Bozzolini</p>
+                    <p>Lights Giulia Pastore - Plot Sarah Stroebele - Costume Grace Lyell</p>
                     <iframe width="844" height="150" src="https://www.youtube.com/embed/BG7W61dm5Q0" title="Cargo Collective: How to Set up Your Online Portfolio Site 6/10/20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <p>Video by Emma Scarafiotti</p>
+                    <img src="https://via.placeholder.com/200" alt="Immagine di esempio">
                 </li>
                 <li id="Il-Cielo-di-Carta">
                     <h1>Il Cielo di Carta</h1>
-                    <body>Multi-Sensorial Interactive Installation, Milan Design Week 2023, 24 Microphones and 36 Speakers</body>
+                    <p2>Multi-Sensorial Interactive Installation, Milan Design Week 2023, 24 Microphones and 36 Speakers</p2>
                     <p>Un immersivo percorso multi sensoriale oniro-naturalistico.</p>
                     <img src="cielo1.jpg" alt="cielo1">
                     <p>Uno spazio notturno sospeso nel tempo, una stanza dove si incontrano la natura, la notte e le stelle. Un abbraccio multisensoriale come quello che riceviamo dalla natura e dalle cose che amiamo. Andare oltre il confine delle mura rendendole vive.</p>
@@ -236,14 +220,19 @@
                 </li>
                 <li id="The-Loop">
                     <h1>The Loop</h1>
-                    <body>Tape Loop tracks</body>
+                    <h5>Tape Loop tracks</h5>
                     <p>A selection of 4 ambient tape-loops</p>
-                    <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1619317470&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fuoriorariorecords" title="Fuoriorario" target="_blank" style="color: #cccccc; text-decoration: none;">Fuoriorario</a> · <a href="https://soundcloud.com/fuoriorariorecords/noods-radio-slow-burning-morning-dew-w-dj-iodosan-10th-september-23" title="Noods Radio - Slow-Burning Morning Dew w/ DJ Iodosan: 10th September &#x27;23" target="_blank" style="color: #cccccc; text-decoration: none;">Noods Radio - Slow-Burning Morning Dew w/ DJ Iodosan: 10th September &#x27;23</a></div>
+                    <img src="https://via.placeholder.com/200" alt="Immagine di esempio">
                 </li>
                 <li id="Mixes-for-Cash">
                     <h1>Mixes for Cash</h1>
                     <p>A selection of music made for...</p>
-                    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1631115124&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fuoriorariorecords" title="Fuoriorario" target="_blank" style="color: #cccccc; text-decoration: none;">Fuoriorario</a> · <a href="https://soundcloud.com/fuoriorariorecords/sets/myselectors" title="DJ Iodosan pres. &quot;My Selectors&quot; - FrittoFM" target="_blank" style="color: #cccccc; text-decoration: none;">DJ Iodosan pres. &quot;My Selectors&quot; - FrittoFM</a></div>
+                    <img src="https://via.placeholder.com/200" alt="Immagine di esempio">
+                </li>
+                <li id="Music">
+                    <h1>Music</h1>
+                    <p>A selection of music</p>
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/BG7W61dm5Q0" title="Cargo Collective: How to Set up Your Online Portfolio Site 6/10/20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </li>
                 <li id="info">
                     <h1>Info</h1>
@@ -252,24 +241,14 @@
                     <p>www.soundcloud.com/pierfrancescoperrone</p>
                     <p>@pierfrancescoperrone</p>
                 </li>
-                <li id="Music">
-                    <h1>Music</h1>
-                    <p>A selection of music</p>
-                    <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1475066914&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fuoriorariorecords" title="Fuoriorario" target="_blank" style="color: #cccccc; text-decoration: none;">Fuoriorario</a> · <a href="https://soundcloud.com/fuoriorariorecords/dj-iodosan-hybrid-cs-rivolta" title="DJ Iodosan @ Hybrid 18 03 22 - CS Rivolta" target="_blank" style="color: #cccccc; text-decoration: none;">DJ Iodosan @ Hybrid 18 03 22 - CS Rivolta</a></div>
-                </li>
-                <li id="read-more">
+                 <li id="read-more">
+                    <h1>Read More...</h1>
                     <h1>Symphonia Inefficientiae - La sinfonia dell'Inefficienza</h1>
                     <p>Nel tumulto frenetico del mondo moderno, la musica è un richiamo all'arte di perdersi nei dettagli, nel tempo "sprecato", nelle esperienze che non possono essere misurate in termini di produttività. È un inno all'importanza di fermarsi e ascoltare il canto degli uccelli, di abbandonarsi al piacere di una conversazione senza scopo, di immergersi nell'arte senza preoccuparsi del tempo. Questa lotta all'efficienza insignificante è una rivoluzione contro l'idea che tutto debba essere ottimizzato, misurato e valutato secondo parametri astratti. La musica dell'inefficienza celebra l'arte di essere umani, di commettere errori, di cercare la bellezza nella casualità, di creare spazi per la creatività, la contemplazione e l'immaginazione.</p>
                     <img src="https://via.placeholder.com/200" alt="Immagine di esempio">
-                    <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1475066914&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fuoriorariorecords" title="Fuoriorario" target="_blank" style="color: #cccccc; text-decoration: none;">Fuoriorario</a> · <a href="https://soundcloud.com/fuoriorariorecords/dj-iodosan-hybrid-cs-rivolta" title="DJ Iodosan @ Hybrid 18 03 22 - CS Rivolta" target="_blank" style="color: #cccccc; text-decoration: none;">DJ Iodosan @ Hybrid 18 03 22 - CS Rivolta</a></div>
                 </li>
             </ul>
         </div>
-
-        
-        <div class="footer">Footer for Container 2</div>
-        <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1619317470&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fuoriorariorecords" title="Fuoriorario" target="_blank" style="color: #cccccc; text-decoration: none;">Fuoriorario</a> · <a href="https://soundcloud.com/fuoriorariorecords/noods-radio-slow-burning-morning-dew-w-dj-iodosan-10th-september-23" title="Noods Radio - Slow-Burning Morning Dew w/ DJ Iodosan: 10th September &#x27;23" target="_blank" style="color: #cccccc; text-decoration: none;">Noods Radio - Slow-Burning Morning Dew w/ DJ Iodosan: 10th September &#x27;23</a></div>
-        
     </div>
 </body>
 </html>
