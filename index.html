@@ -11,8 +11,7 @@
             padding: 0;
         }
 
-        .container {
-            display: flex;
+        .container1, .container2 {
             overflow-x: hidden;
         }
 
@@ -60,6 +59,7 @@
             font-weight: normal;
             font-size: 24px;
             display: block;
+            margin-bottom: 5px;
         }
 
         .voci a:hover {
@@ -140,12 +140,12 @@
         }
         
         .container + .container {
-            margin-top: 30px; /* Aggiunge uno spazio tra i due container */
+            margin: 15px; /* Aggiunge uno spazio tra i due container */
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container1">
         <div class="colonna-sinistra">
             <div class="titolo">
                 <h1>Pierfrancesco Perrone</h1>
@@ -172,7 +172,8 @@
                 <a href="#read-more">Read More</a>
             </div>
         </div>
-        <div class="colonna-destra">
+        <div class="container2">
+            <div class="colonna-destra">
             <ul>
                 <li id="portfolio">
                 </li>
@@ -223,6 +224,7 @@
                     <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1475066914&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fuoriorariorecords" title="Fuoriorario" target="_blank" style="color: #cccccc; text-decoration: none;">Fuoriorario</a> · <a href="https://soundcloud.com/fuoriorariorecords/dj-iodosan-hybrid-cs-rivolta" title="DJ Iodosan @ Hybrid 18 03 22 - CS Rivolta" target="_blank" style="color: #cccccc; text-decoration: none;">DJ Iodosan @ Hybrid 18 03 22 - CS Rivolta</a></div>
                 </li>
             </ul>
+            </div>
         </div>
     </div>
 
