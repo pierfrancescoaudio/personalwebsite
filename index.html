@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sito Web Semplice</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            overflow-x: hidden;
+        }
+
+        .colonna-sinistra {
+            background-color: white;
+            color: black;
+            width: 25%;
+            padding: 0%;
+            font-size: 24px;
+            margin-top: 15px;
+            margin-left: 20px;
+            position: fixed;
+            top: 0;
+            overflow-y: hidden;
+        }
+
+        .colonna-destra {
+            width: 75%;
+            padding: 0%;
+            margin-left: 40%;
+            margin-right: 20px;
+            position: relative;
+            overflow-y: scroll;
+        }
+
+        .voci {
+            margin-bottom: 20px;
+        }
+
+        .voci a {
+            text-decoration: none;
+            color: black;
+            font-weight: normal;
+            font-size: 24px;
+            display: block;
+        }
+
+        .voci a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        h4 {
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        .colonna-sinistra h1 {
+            font-size: 24px;
+        }
+
+        .colonna-destra ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        iframe {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .colonna-sinistra, .colonna-destra {
+                width: 100%;
+                position: static;
+            }
+
+            .voci a {
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h4 {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+
+            .colonna-destra li {
+                margin-top: 20px;
+            }
+
+            .colonna-sinistra {
+                width: 100%;
+                margin-left: 0;
+                position: static;
+            }
+
+            .colonna-destra {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="colonna-sinistra">
+            <div class="titolo">
+                <h1>Pierfrancesco Perrone</h1>
+                <h4>studio sul suono che mi ha attraversato</h4>
+            </div>
+            <div class="voci">
+                <a href="#portfolio">Portfolio</a>
+                <a href="#The-Red-Shoes">The Red Shoes</a>
+                <a href="#Il-Cielo-di-Carta">Il Cielo di Carta</a>
+                <a href="#The-Loop">The Loop</a>
+                <a href="#Mixes-for-Cash">Mixes For Cash</a>
+                <a href="#Music">Music</a>
+                <a href="#info">Pierfrancesco Perrone — Info</a>
+                <a href="#info">1. A sound is a perfect metaphor, an allegory in resonance. When heard, its tonal boundaries create an artistic proposition, and when considered without subjective interpretation, it becomes a direct analogy to the origins and limitations of our quest to comprehend the essence of all things.</a>
+                <a href="#read-more">Read More</a>
+            </div>
+        </div>
+        <div class="colonna-destra">
+            <ul>
+                <li id="portfolio">
+                </li>
+                <li id="The-Red-Shoes">
+                    <h1>The Red Shoes</h1>
+                    <p2>2023 - 61' - Coreographer Philippe Kratz - Music Pierfrancesco Perrone</p2>
+                    <p>Nuovo Balletto di Toscana - Cristina Bozzolini</p>
+                    <p>Lights Giulia Pastore - Plot Sarah Stroebele - Costume Grace Lyell</p>
+                    <iframe width="844" height="150" src="https://www.youtube.com/embed/BG7W61dm5Q0" title="Cargo Collective: How to Set up Your Online Portfolio Site 6/10/20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>Video by Emma Scarafiotti</p>
+                    <img src="https://via.placeholder.com/200" alt="Immagine di esempio">
+                </li>
+                <li id="Il-Cielo-di-Carta">
+                    <h1>Il Cielo di Carta</h1>
+                    <p2>Multi-Sensorial Interactive Installation, Milan Design Week 2023, 24 Microphones and 36 Speakers</p2>
+                    <p>Un immersivo percorso multi sensoriale oniro-naturalistico.</p>
+                    <img src="cielo1.png" alt="cielo1">
+                    <p>Uno spazio notturno sospeso nel tempo, una stanza dove si incontrano la natura, la notte e le stelle. Un abbraccio multisensoriale come quello che riceviamo dalla natura e dalle cose che amiamo. Andare oltre il confine delle mura rendendole vive.</p>
+                    <img src="cielo2.png" alt="cielo2">
+                    <p>Un paesaggio sonoro naturalistico generativo che viene stimolato dall'interazione degli spettatori tramite l'interazione con tutte le superfici della stanza.</p>
+                    <img src="cielo3.png" alt="cielo3">
+                </li>
+                <li id="The-Loop">
+                    <h1>The Loop</h1>
+                    <h5>Tape Loop tracks</h5>
+                    <p>A selection of 4 ambient tape-loops</p>
+                    <img src="https://via.placeholder.com/200" alt="Immagine di esempio">
+                </li>
+                <li id="Mixes-for-Cash">
+                    <h1>Mixes for Cash</h1>
+                    <p>A selection of music made for...</p>
+                    <img src="https://via.placeholder.com/200" alt="Immagine di esempio">
+                </li>
+                <li id="info">
+                    <h1>Info</h1>
+                    <p>contatti:</p>
+                    <p>pierfrancescoaudio@gmail.com</p>
+                    <p>www.soundcloud.com/pierfrancescoperrone</p>
+                    <p>@pierfrancescoperrone</p>
+                </li>
+                <li id="Music">
+                    <h1>Music</h1>
+                    <p>A selection of music</p>
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/BG7W61dm5Q0" title="Cargo Collective: How to Set up Your Online Portfolio Site 6/10/20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </li>
+                <li id="read-more">
+                    <h1>Symphonia Inefficientiae - La sinfonia dell'Inefficienza</h1>
+                    <p>Nel tumulto frenetico del mondo moderno, la musica è un richiamo all'arte di perdersi nei dettagli, nel tempo "sprecato", nelle esperienze che non possono essere misurate in termini di produttività. È un inno all'importanza di fermarsi e ascoltare il canto degli uccelli, di abbandonarsi al piacere di una conversazione senza scopo, di immergersi nell'arte senza preoccuparsi del tempo. Questa lotta all'efficienza insignificante è una rivoluzione contro l'idea che tutto debba essere ottimizzato, misurato e valutato secondo parametri astratti. La musica dell'inefficienza celebra l'arte di essere umani, di commettere errori, di cercare la bellezza nella casualità, di creare spazi per la creatività, la contemplazione e l'immaginazione.</p>
+                    <img src="https://via.placeholder.com/200" alt="Immagine di esempio">
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
