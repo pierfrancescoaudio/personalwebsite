@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Sito Web Semplice</title>
     <style>
+        /* Stile CSS per il tuo documento */
         body {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             margin: 0;
@@ -86,7 +87,7 @@
         }
 
         h1 + p {
-            margin:0px
+            margin:0px;
         }
 
         .colonna-sinistra h1 {
@@ -115,12 +116,12 @@
         .rotating-image {
             width: 100px;
             height: 100px;
-            position: absolute; /* Imposta la posizione assoluta per posizionare l'immagine in modo specifico */
+            position: absolute;
             padding: 0%;
             margin: 0%;
-            top: 80px; /* Modifica queste coordinate per posizionare l'immagine dove desideri */
-            left: 150px; /* Modifica queste coordinate per posizionare l'immagine dove desideri */
-            animation: spin 5s linear infinite; /* Crea un'animazione "spin" */
+            top: 80px;
+            left: 150px;
+            animation: spin 5s linear infinite;
         }
 
         @keyframes spin {
@@ -129,56 +130,17 @@
         }
 
         footer {
-            background-color: #333; /* Cambia il colore dello sfondo del footer */
-            color: white; /* Cambia il colore del testo del footer */
+            background-color: #333;
+            color: white;
             padding: 10px;
-            text-align: center; /* Allinea il contenuto al centro del footer */
+            text-align: center;
             position: fixed;
             bottom: 0;
-            width: 100%; /* Il footer occupa l'intera larghezza */
+            width: 100%;
         }
-
-        /* Stile specifico per il lettore audio SoundCloud */
-        iframe {
-            border: none; /* Rimuove il bordo attorno al lettore audio */
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-
-            .colonna-sinistra, .colonna-destra {
-                width: 100%;
-                position: static;
-            }
-
-            .colonna-destra li {
-                margin-top: 20px;
-            }
-
-            .colonna-sinistra {
-                width: 100%;
-                margin-left: 0;
-                margin-right: 0;
-                position: static;
-            }
-
-            .colonna-destra {
-                width: 100%;
-                margin-left: 0;
-            }
-
-            .rotating-image {
-                width: 25px; /* Cambia la larghezza dell'immagine per rimpicciolirla */
-                height: 25px; /* Cambia l'altezza dell'immagine per rimpicciolirla */
-                position: absolute; /* Imposta la posizione assoluta per posizionare l'immagine in modo specifico */
-                padding: 0%;
-                margin: 0%;
-                top: 45px; /* Modifica queste coordinate per posizionare l'immagine dove desideri */
-                left: 60px; /* Modifica queste coordinate per posizionare l'immagine dove desideri */
-                animation: spin 5s linear infinite; /* Crea un'animazione "spin" */
-            }
+        
+        .container + .container {
+            margin-top: 30px; /* Aggiunge uno spazio tra i due container */
         }
     </style>
 </head>
@@ -252,27 +214,36 @@
                 <li id="Music">
                     <h1>Music</h1>
                     <p>A selection of music</p>
-                    <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1475066914&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fuoriorariorecords" title="Fuoriorario" target="_blank" style="color: #cccccc; text-decoration: none;">Fuoriorario</a> · <a href="https://soundcloud.com/fuoriorariorecords/dj-iodosan-hybrid-cs-rivolta" title="DJ Iodosan @ Hybrid 18 03 22 - CS Rivolta" target="_blank" style="color: #cccccc; text-decoration: none;">DJ Iodosan @ Hybrid 18 03 22 - CS Rivolta</a></div>
+                    <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1475066914&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow;...</div>
                 </li>
                 <li id="read-more">
                     <h1>Symphonia Inefficientiae - La sinfonia dell'Inefficienza</h1>
                     <p>Nel tumulto frenetico del mondo moderno, la musica è un richiamo all'arte di perdersi nei dettagli, nel tempo "sprecato", nelle esperienze che non possono essere misurate in termini di produttività. È un inno all'importanza di fermarsi e ascoltare il canto degli uccelli, di abbandonarsi al piacere di una conversazione senza scopo, di immergersi nell'arte senza preoccuparsi del tempo. Questa lotta all'efficienza insignificante è una rivoluzione contro l'idea che tutto debba essere ottimizzato, misurato e valutato secondo parametri astratti. La musica dell'inefficienza celebra l'arte di essere umani, di commettere errori, di cercare la bellezza nella casualità, di creare spazi per la creatività, la contemplazione e l'immaginazione.</p>
                     <img src="https://via.placeholder.com/200" alt="Immagine di esempio">
-                    <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1475066914&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fuoriorariorecords" title="Fuoriorario" target="_blank" style="color: #cccccc; text-decoration: none;">Fuoriorario</a> · <a href="https://soundcloud.com/fuoriorariorecords/dj-iodosan-hybrid-cs-rivolta" title="DJ Iodosan @ Hybrid 18 03 22 - CS Rivolta" target="_blank" style="color: #cccccc; text-decoration: none;">DJ Iodosan @ Hybrid 18 03 22 - CS Rivolta</a></div>
+                    <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1475066914&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow;...</div>
                 </li>
             </ul>
         </div>
     </div>
 
-    
-<footer>
-    <h3>Footer della pagina</h3>
-    <p>Ecco una canzone fantastica da SoundCloud nel footer:</p>
+    <!-- Aggiungi un secondo container indipendente con la sua colonna e footer -->
+    <div class="container">
+        <div class="colonna-sinistra">
+            <!-- Contenuto della colonna sinistra del secondo container -->
+        </div>
+        <div class="colonna-destra">
+            <!-- Contenuto della colonna destra del secondo container -->
+        </div>
+    </div>
 
-    <!-- Incolla il codice di incorporamento qui -->
-    
-    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1475066914&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fuoriorariorecords" title="Fuoriorario" target="_blank" style="color: #cccccc; text-decoration: none;">Fuoriorario</a> · <a href="https://soundcloud.com/fuoriorariorecords/dj-iodosan-hybrid-cs-rivolta" title="DJ Iodosan @ Hybrid 18 03 22 - CS Rivolta" target="_blank" style="color: #cccccc; text-decoration: none;">DJ Iodosan @ Hybrid 18 03 22 - CS Rivolta</a></div>
-    <!-- Altri contenuti del footer -->
-</footer>
+    <footer>
+        <h3>Footer della pagina</h3>
+        <p>Ecco una canzone fantastica da SoundCloud nel footer:</p>
+
+        <!-- Incolla il codice di incorporamento qui -->
+
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1475066914&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fuoriorariorecords" title="Fuoriorario" target="_blank" style="color: #cccccc; text-decoration: none;">Fuoriorario</a> · <a href="https://soundcloud.com/fuoriorariorecords/dj-iodosan-hybrid-cs-rivolta" title="DJ Iodosan @ Hybrid 18 03 22 - CS Rivolta" target="_blank" style="color: #cccccc; text-decoration: none;">DJ Iodosan @ Hybrid 18 03 22 - CS Rivolta</a></div>
+        <!-- Altri contenuti del footer -->
+    </footer>
 </body>
 </html>
