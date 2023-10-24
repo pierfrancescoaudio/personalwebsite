@@ -110,7 +110,8 @@
         }
 
         .rotating-image {
-            size: 50px;
+            width: 50px;
+            height: 50px;
             position: absolute; /* Imposta la posizione assoluta per posizionare l'immagine in modo specifico */
             padding: 0%;
             margin: 0%;
@@ -129,6 +130,11 @@
             color: white; /* Cambia il colore del testo del footer */
             padding: 20px;
             text-align: center; /* Allinea il contenuto al centro del footer */
+        }
+
+        /* Stile specifico per il lettore audio SoundCloud */
+        iframe {
+            border: none; /* Rimuove il bordo attorno al lettore audio */
         }
 
         @media (max-width: 768px) {
@@ -157,7 +163,8 @@
             }
 
             .rotating-image {
-            size: 25px;
+            width: 25px; /* Cambia la larghezza dell'immagine per rimpicciolirla */
+            height: 25px; /* Cambia l'altezza dell'immagine per rimpicciolirla */
             position: absolute; /* Imposta la posizione assoluta per posizionare l'immagine in modo specifico */
             padding: 0%;
             margin: 0%;
