@@ -1,0 +1,197 @@
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* Imposta un'altezza minima pari al 100% dell'altezza della viewport */
+        }
+
+        .container {
+            display: flex;
+            overflow-x: hidden;
+        }
+
+        .colonna-sinistra {
+            background-color: white;
+            color: black;
+            width: 25%;
+            padding: 0%;
+            font-size: 24px;
+            margin-top: 15px;
+            margin-left: 20px;
+            position: fixed;
+            top: 0;
+            overflow-y: auto;
+        }
+
+        .colonna-destra {
+            min-height: 100%; /* Imposta un'altezza minima pari al 100% dell'altezza della viewport */
+            width: 75%;
+            padding: 0%;
+            margin-left: 40%;
+            margin-right: 20px;
+            position: relative;
+            overflow-y: scroll;
+        }
+
+        .voci {
+            margin-bottom: 20px;
+        }
+
+        .voci a {
+            text-decoration: none;
+            color: black;
+            font-weight: normal;
+            font-size: 24px;
+            display: block;
+            margin-top: 20px;
+        }
+
+        .vocirosse a {
+            text-decoration: none;
+            color: rgb(255, 0, 0);
+            font-weight: normal;
+            font-size: 24px;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .voci2 a {
+            text-decoration: none;
+            color: black;
+            font-weight: normal;
+            font-size: 24px;
+            display: block;
+        }
+
+        .voci2 b {
+            text-decoration: none;
+            color: black;
+            font-weight: normal;
+            font-size: 20px;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+
+        .voci a:hover {
+            text-decoration: underline;
+        }
+        .vocirosse a:hover {
+            text-decoration: underline;
+        }
+
+        .voci2 a:hover {
+            text-decoration: underline;
+        }
+
+        li {
+            margin-block-end: 30px; /* Aggiunge uno spazio di 20 pixel tra gli elementi <li> */
+        }
+
+        body{
+            font-size: 12px;
+            font-weight: 300;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 350;
+        }
+
+        h4 {
+            font-size: 16px;
+            font-weight: 300;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        h5 {
+            font-size: 12px;
+            font-weight: 350;
+            margin: 0;
+        }
+
+
+        p {
+            margin: 0;
+            font-size: 10px;
+            font-weight: 300;
+        }
+
+        .p1 {
+            margin-top: 0;
+            font-size: 10px;
+            font-weight: 300;
+        }
+
+
+        .colonna-destra ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        iframe {
+            max-width: 100%;
+        }
+
+        .bottoni {
+            display: flex;
+            justify-content: flex-start; /* Allinea i bottoni a sinistra */
+            align-items: flex-end; /* Allinea i bottoni in basso */
+            margin-bottom: 0;
+        }
+
+        button {
+            width: 30px;
+            height: 30px;
+
+        }
+
+        @media (max-width: 1280px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .colonna-sinistra, .colonna-destra {
+                width: 100%;
+                position: static;
+            }
+
+            .voci a {
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h4 {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+
+            .colonna-destra li {
+                margin-top: 20px;
+            }
+
+            .colonna-sinistra {
+                width: 100%;
+                margin-left: 0;
+                position: static;
+            }
+
+            .colonna-destra {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
